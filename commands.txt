@@ -1,0 +1,47 @@
+#Initialize Terraform:
+
+terraform init
+
+#Validate the Configuration:
+
+terraform validate
+
+#Generate and Show an Execution Plan:
+
+terraform plan 
+
+#Apply the Changes:
+
+terraform apply
+
+
+
+
+
+
+
+
+# Initialize a new Git repository
+git init nginx-Terraform
+
+# Change directory to the new repository
+cd nginx-Terraform
+
+# Create the Terraform files
+touch main.tf asg.tf route53.tf
+
+# Add the content to each file (copy the above Terraform configurations into the respective files)
+
+# Stage the files
+git add main.tf asg.tf route53.tf
+
+# Commit the files
+git commit -m "Add Terraform code for AWS infrastructure"
+
+# Create a new repository on GitHub (or another Git hosting service)
+
+# Add the remote origin (replace <your-repo-url> with the URL of your remote repository)
+git remote add origin <your-repo-url>
+
+# Push the changes to the remote repository
+git push -u origin master
